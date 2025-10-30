@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">Srinidhi Gutha</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience-certifications">Experience & Certifications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Hi, I'm Srinidhi 👋</h2>
+      <p>B.Tech CSE student | Exploring development & security</p>
+      <p>📄 Checkout my Resume. 
+      <a href="SRINIDHI REDDY RESUME.pdf" target="_blank">Click here</a></p>
+      <a href="#about" class="btn">Know More About Me</a>
+    </div>
+  </section>
+  <section id="about">
+  <div class="about-container">
+    <div class="about-left">
+      <h2>About Me</h2>
+      <p>I'm Srinidhi, a Computer Science student with a keen interest in cybersecurity, web development, and building efficient solutions.</p>
+      <p>I enjoy solving real-world problems through technology and love exploring creative ideas that make a meaningful impact.</p>
+    </div>
+    <div class="about-right">
+      <img src="srinidhi photo.jpg" alt="Srinidhi Gutha" class="about-img">
+    </div>
+  </div>
+
+</section>
+<section id="education">
+  <h2 class="education-heading"><i class="fas fa-graduation-cap"></i> Education</h2>
+  <div class="timeline">
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+        <p><strong>SR University, Warangal</strong></p>
+        <p>August 2023 – Present</p>
+        <p><strong>CGPA:</strong> 9.699</p>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="content">
+        <h3>Intermediate – MPC</h3>
+        <p><strong>SR Junior College,Peddamberpet</strong></p>
+        <p>2021 – 2023</p>
+        <p><strong>Marks:</strong> 990 / 1000</p>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="content">
+        <h3>Secondary School Certificate (SSC)</h3>
+        <p><strong>Sai Siddharatha High School</strong></p>
+        <p>Completed in 2021</p>
+        <p><strong>GPA:</strong> 10.0 / 10</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="projects-heading">Projects</h2>
+  <div class="project-container">
+
+    <div class="project-card" 
+         data-title="Personal Portfolio Website"
+         data-description="Developed a fully responsive personal portfolio using HTML, CSS, and JavaScript. It highlights my skills, projects, and certifications with smooth navigation and clean design.">
+      <h3>Personal Portfolio Website</h3>
+      <p>A modern responsive portfolio built with HTML, CSS, and JavaScript showcasing my profile and work.</p>
+    </div>
+
+    <div class="project-card" 
+         data-title="Event Safety AI – Drishti"
+         data-description="Built an AI-driven event safety solution for real-time crowd analysis, abnormal activity detection, and emergency response during a 24-hour hackathon.">
+      <h3>Event Safety AI – Drishti</h3>
+      <p>A hackathon project using AI for real-time event surveillance, people tracking, and emergency response.</p>
+    </div>
+
+    <div class="project-card"
+         data-title="Secure Code Review"
+         data-description="Performed static analysis on Python scripts to detect and fix security flaws such as hardcoded credentials, unsafe inputs, and insecure function usage during a cybersecurity internship.">
+      <h3>Secure Code Review</h3>
+      <p>Performed static analysis on Python scripts to identify and fix security flaws as part of an internship task.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Project Popup Modal -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title"></h3>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+</section>
+<section id="experience-certifications">
+  <h2><i class="fas fa-briefcase"></i> Experience & Certifications</h2>
+  <div class="exp-cert-container">
+    
+    <!-- Experience -->
+    <div class="experience">
+      <h3><i class="fas fa-laptop-code"></i> Internships / Experience</h3>
+      <ul>
+        <li>
+          <strong>Cybersecurity Intern</strong> – CodeAlpha (July 2025)<br>
+          <span>Reviewed Python code for security flaws and documented issues.</span>
+        </li>
+        <li>
+          <strong>Hackathon Project</strong> – Product MVP(2023)<br>
+          <span>Built and deployed a product landing page within 24 hours using GitHub Pages.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="certifications">
+  <h3><i class="fas fa-certificate"></i> Certifications</h3>
+  <ul>
+    <li class="certificate-item" 
+        data-title="Java (Basic) – HackerRank"
+        data-file="hackerrank certification.pdf">
+      <strong>Java Programming in HackerRank (Basic)</strong><br>
+      <span>Certified in Java (Basic), showcasing core programming and problem-solving skills.</span>
+    </li>
+
+    <li class="certificate-item" 
+        data-title="Cloud Security – Simplilearn"
+        data-file="simplilearn_cloud_security_certificate.pdf">
+      <strong>Simplilearn: Cloud Security</strong><br>
+      <span>Hands-on AWS security, IAM, and compliance modules.</span>
+    </li>
+  </ul>
+</div>
+
+<!-- Certificate Modal -->
+<div id="certificate-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="certificate-title"></h3>
+    <div id="certificate-viewer" style="margin-top:1rem;">
+      <!-- Certificate content (PDF or image) will appear here -->
+    </div>
+  </div>
+</div>
+
+</section>
+<section id="skills" class="skills-section">
+  <h2 class="skills-heading">Skills</h2>
+  <div class="project-container">
+    <div class="project-card">HTML</div>
+    <div class="project-card">Java</div>
+    <div class="project-card">CSS</div>
+    <div class="project-card"> Basic C Programming</div>
+    <div class="project-card">Linux Commands</div>
+  </div>
+</section>
+<section id="contact">
+  <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <p><i class="fas fa-user"></i> Srinidhi Reddy</p>
+      <p><i class="fas fa-envelope-open-text"></i> guthasrinidhi990@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +91 9059011701</p>
+      <p><i class="fas fa-map-marker-alt"></i> Nalgonda, India</p>
+    </div>
+
+    <!-- Updated form -->
+    <form class="contact-form" action="https://formspree.io/f/mblpkpab" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+
+</body>
+</html>
+<script>
+const projectCards = document.querySelectorAll('.project-card');
+const modal = document.getElementById('project-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalDescription = document.getElementById('modal-description');
+const closeBtn = document.querySelector('.close');
+
+projectCards.forEach(card => {
+  card.addEventListener('click', () => {
+    modalTitle.textContent = card.getAttribute('data-title');
+    modalDescription.textContent = card.getAttribute('data-description');
+    modal.style.display = 'flex';
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+</script>
+
+<script>
+// ===== Certifications Modal with PDF & Image Support =====
+const certItems = document.querySelectorAll('.certificate-item');
+const certModal = document.getElementById('certificate-modal');
+const certTitle = document.getElementById('certificate-title');
+const certViewer = document.getElementById('certificate-viewer');
+const closeBtns = document.querySelectorAll('.close');
+
+certItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const fileSrc = item.getAttribute('data-file');
+    certTitle.textContent = item.getAttribute('data-title');
+
+    // Clear previous content
+    certViewer.innerHTML = '';
+
+    // If it's a PDF
+    if (fileSrc.endsWith('.pdf')) {
+      const iframe = document.createElement('iframe');
+      iframe.src = fileSrc;
+      iframe.width = '100%';
+      iframe.height = '500px';
+      iframe.style.border = 'none';
+      iframe.style.borderRadius = '10px';
+      certViewer.appendChild(iframe);
+    } 
+    // If it's an image
+    else if (fileSrc.match(/\.(jpg|jpeg|png|gif)$/i)) {
+      const img = document.createElement('img');
+      img.src = fileSrc;
+      img.style.width = '100%';
+      img.style.borderRadius = '10px';
+      certViewer.appendChild(img);
+    }
+
+    certModal.style.display = 'flex';
+  });
+});
+
+closeBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    certModal.style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  if (e.target === certModal) certModal.style.display = 'none';
+});
+</script>
